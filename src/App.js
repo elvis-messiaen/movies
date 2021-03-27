@@ -6,10 +6,10 @@ class App extends Component{
   render () {
     return (
       <>
-      <div className="App">
+      <div className="App d-flex flex-column">
          <Header/>
       </div>
-      <div className="d-flex flex-row">
+      <div className="d-flex flex-row min-vh-100 pt-4 p-2">
         <MoviesList/>
         <MoviesDetails/>
       </div>
