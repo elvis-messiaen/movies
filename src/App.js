@@ -1,12 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react'
+import {Header, MoviesDetails, MoviesList } from './components';
 
-function App() {
-  return (
-    <div className="container">
-      Bonjour
-    </div>
-  );
+
+class App extends Component{
+  render () {
+    return (
+      <>
+      <div className="App">
+         <Header/>
+      </div>
+      <div className="d-flex flex-row">
+        <MoviesList/>
+        <MoviesDetails/>
+      </div>
+      </>
+    )
+  }
 }
-
 export default App;
